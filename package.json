@@ -1,0 +1,14 @@
+{
+  "name": "practical-lessons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Yaresko-Olya/Practical-lessons.git",
+  "author": "Yaresko-Olya <olya222227181@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}

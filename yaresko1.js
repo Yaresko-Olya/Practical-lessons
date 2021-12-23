@@ -6,8 +6,8 @@ function isPalindrome(str) {
     var palin = str.split("").reverse().join("");
     return palin === str
 }
-// console.log(isPalindrome("abcba"))
-
+console.log(isPalindrome("aba"))
+module.exports = isPalindrome;
 // №2
 /*  Написать функцию, которая принимает аргумент и валидирует его по правилам: 
 - Строка должна содержать буквы и специальные символы включая пробел: 
@@ -45,9 +45,9 @@ function isValidValue(myVar){
     }
     
 }
-// console.log(isValidValue('A!n'))
-// console.log(isValidValue(55))
-
+console.log(isValidValue('A!n'))
+console.log(isValidValue(55))
+module.exports = isValidValue;
 
 // №3
 /* Создайте функцию, которая принимает два аргумента: 

@@ -21,7 +21,7 @@ function showNumberOrString(N){
     }
     
 }
-// showNumberOrString(50)
+showNumberOrString(50)
 
 
 
@@ -32,13 +32,14 @@ for (let i = 0; i < 20; i++) { //! Эту строку можно изменит
         //! Эту строку можно изменить 
     }
 console.log(i, j); } } */
-
-for (let i = 0; i < 16; i++) { //! Эту строку можно изменить 
-    for (let j = 0; j < 20; j++) { 
-        if (i === 15 && j === 15) { 
-            return 
+function task2() {
+    for (let i = 0; i < 16; i++) { //! Эту строку можно изменить
+        for (let j = 0; j < 20; j++) {
+            if (i === 15 && j === 15) {
+                return
+            }
+            console.log(i, j);
         }
-    console.log(i, j); 
     }
 }
 
