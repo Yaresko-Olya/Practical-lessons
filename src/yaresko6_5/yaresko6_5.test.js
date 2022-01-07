@@ -2,7 +2,7 @@
 const bind = require('./yaresko6_5');
 
 
-test('there are no intersections in objects, get an empty object', () => {
+test('function start check', () => {
     const user = {
         firstName: '',
         lastName: '',
@@ -18,7 +18,7 @@ test('there are no intersections in objects, get an empty object', () => {
     expect(bind(getFullName, user)).toBeInstanceOf(Function);
 });
 
-test('there is one intersection in the objects b: 2', () => {
+test('first output configuration option', () => {
     const user = {
         firstName: '',
         lastName: '',
@@ -34,7 +34,7 @@ test('there is one intersection in the objects b: 2', () => {
     expect(bind(getFullName, user, 'Иван')('Человеков')).toBe('Иван Человеков');
 });
 
-test('there are no intersections in objects, get an empty object', () => {
+test('second output configuration option', () => {
     const user = {
         firstName: '',
         lastName: '',
@@ -50,7 +50,7 @@ test('there are no intersections in objects, get an empty object', () => {
     expect(bind(getFullName, user, 'Иван', 'Человеков')()).toBe('Иван Человеков');
 });
 
-test('there are no intersections in objects, get an empty object', () => {
+test('third output configuration option', () => {
     const user = {
         firstName: '',
         lastName: '',

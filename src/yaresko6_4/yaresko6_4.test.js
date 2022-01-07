@@ -1,18 +1,18 @@
 // 4
 const isEmpty = require('./yaresko6_4');
 
-test('there is one intersection in the objects b: 2', () => {
+test('with value undefined we get true', () => {
     expect(isEmpty({ a: undefined })).toBe(true);
 });
 
-test('there are no intersections in objects, get an empty object', () => {
+test('empty object gets true', () => {
     expect(isEmpty({})).toBe(true);
 });
 
-test('there are no intersections in objects, get an empty object', () => {
+test('with value undefined + number we get false', () => {
     expect(isEmpty({ a: undefined, b: 1 })).toBe(false);
 });
 
-test('there are no intersections in objects, get an empty object', () => {
+test('with value number we get false', () => {
     expect(isEmpty({ b: 1 })).toBe(false);
 });
